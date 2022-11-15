@@ -118,84 +118,84 @@ function gameObject(){
 return obj;
 }
 
-// // console.log(gameObject())
+console.log(gameObject())
 
-// function homeTeamName(){
-//     let object = gameObject()
-//     return object['home']['teamName']
-// }
-// console.log(homeTeamName())
+function homeTeamName(){
+    let object = gameObject()
+    return object['home']['teamName']
+}
+console.log(homeTeamName())
 
-// let x = 99;
-// let y = 42;
-// debugger;
-// console.log("x:", x);
+let x = 99;
+let y = 42;
+debugger;
+console.log("x:", x);
 
-// let oo = { foo:42, bar:83, baz:79};
-// for(let key in oo){
-//     let value = oo[key]
-//     console.log("Key:", key, "value:", value)
-// }
+let oo = { foo:42, bar:83, baz:79};
+for(let key in oo){
+    let value = oo[key]
+    console.log("Key:", key, "value:", value)
+}
 
-// console.log(Object.keys(oo));
-// console.log(Object.values(oo));
-// console.log(Object.entries(oo));
+console.log(Object.keys(oo));
+console.log(Object.values(oo));
+console.log(Object.entries(oo));
 
-// function numPointsScored(playersName){
-// return playersName.Number;
-// }
+function numPointsScored(playersName){
+return playersName.Number;
+}
 
-// console.log(numPointsScored(gameObject()['home']['players']['Alan Anderson']))
+console.log(numPointsScored(gameObject()['home']['players']['Alan Anderson']))
 
-// function shoeSize(playersShoeSize){
-//     return playersShoeSize.Shoe;
-// }
+function shoeSize(playersShoeSize){
+    return playersShoeSize.Shoe;
+}
     
-// console.log(shoeSize(gameObject()['home']['players']['Mason Plumlee']))
+console.log(shoeSize(gameObject()['home']['players']['Mason Plumlee']))
 
-// function teamColors(teamColors){
-//     return teamColors.colors;
-// }
+function teamColors(teamColors){
+    return teamColors.colors;
+}
     
-// console.log(teamColors(gameObject().away))
+console.log(teamColors(gameObject().away))
 
-// function teamNames(obj){
-//  const firstTeamName = obj.home.teamName
-//  const secondTeamName = obj.away.teamName
-// return [firstTeamName,secondTeamName]
-// }
-// console.log(teamNames(gameObject()))
+function teamNames(obj){
+ const firstTeamName = obj.home.teamName
+ const secondTeamName = obj.away.teamName
+return [firstTeamName,secondTeamName]
+}
+console.log(teamNames(gameObject()))
 
-// function playerNumbers(teamName){
-//     let object = gameObject();
-//     let names = object[teamName].players;
-//     let namesarr = Object.values(names);
-//     let numbersarr =  namesarr.map(obj=>obj.Number);
-//    return numbersarr;
-//  };
-//   console.log(playerNumbers('home'))
+function playerNumbers(teamName){
+    let object = gameObject();
+    let names = object[teamName].players;
+    let namesarr = Object.values(names);
+    let numbersarr =  namesarr.map(obj=>obj.Number);
+   return numbersarr;
+ };
+  console.log(playerNumbers('home'))
 
-// function playerStats(playerName){
-//   let obj = gameObject()
-//   let HomePlayers = () => {
-//     for(let playerHome in obj.home){
-//         return playerHome , obj.home['players']
-//     }
-//   }
+function playerStats(playerName){
+  let obj = gameObject()
+  let HomePlayers = () => {
+    for(let playerHome in obj.home){
+        return playerHome , obj.home['players']
+    }
+  }
 
-//   let AwayPlayers = () => {
-//     for(let playerAway in obj.away){
-//         return playerAway , obj.away['players']
-//     }
-//   }
-//   const teamHome = HomePlayers()
-//   const teamAway = AwayPlayers()
-//   let allPlayers = {...teamHome , ...teamAway}
-//   let state = allPlayers[playerName];
-//   return state;
+  let AwayPlayers = () => {
+    for(let playerAway in obj.away){
+        return playerAway , obj.away['players']
+    }
+  }
+  const teamHome = HomePlayers()
+  const teamAway = AwayPlayers()
+  let allPlayers = {...teamHome , ...teamAway}
+  let state = allPlayers[playerName];
+  return state;
 
-// }
-// console.log(playerStats('DeSagna Diop'))
+}
+console.log(playerStats('DeSagna Diop'))
 
  function bigShoeRebounds(){
   let object = gameObject();
